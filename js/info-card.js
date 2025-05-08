@@ -27,7 +27,8 @@ class InfoCard extends HTMLElement {
           color: #232677;
         }
         img {
-          width: 250px;
+          height: 200px;
+          width: 200px;
           border-radius: 10px 10px 10px 10px;
         }
       `;
