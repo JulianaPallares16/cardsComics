@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="js/info-card.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <info-card>
-        <h1 slot="nombre">Wonder Woman</h1>
-        <span slot="imagen">wonder-woman.jpg</span>
-        <p slot="clave"><b>Nombre Clave </b>Diana Prince</p>
-        <p slot="casa"><b>Casa </b>DC Comics</p>
-        <p slot="año"><b>Año de aparición </b>1942</p>
-        <p slot="info">Presenta el origen de la princesa Diana de Temiscira y su viaje desde la Isla Paraíso al "Mundo del Hombre".</p>
-    </info-card>
-        <h1 slot="nombre">Alguien</h1>
-        <span slot="imagen">flash.png</span>
-        <p slot="clave"><b>Nombre Clave </b>Barry Allen</p>
-        <p slot="casa"><b>Casa </b>DC Comics</p>
-        <p slot="año"><b>Año de aparición </b>1940</p>
-        <p slot="info"></p>
-    <info-card>
-
-    </info-card>
+    <div id="container">
+        <info-card>
+            <h1 slot="nombre">Wonder Woman</h1>
+            <span slot="imagen">wonder-woman.jpg</span>
+            <p slot="clave"><b>Nombre Clave </b>Diana Prince</p>
+            <p slot="casa"><b>Casa </b>DC Comics</p>
+            <p slot="año"><b>Año de aparición </b>1942</p>
+            <p slot="info">Presenta el origen de la princesa Diana de Temiscira y su viaje desde la Isla Paraíso al "Mundo del Hombre".</p>
+        </info-card>
+        <info-card>
+            <h1 slot="nombre">Flash</h1>
+            <span slot="imagen">Flash.png</span>
+            <p slot="clave"><b>Nombre Clave </b>Barry Allen</p>
+            <p slot="casa"><b>Casa </b>DC Comics</p>
+            <p slot="año"><b>Año de aparición </b>1940</p>
+            <p slot="info">Un estudiante universitario descubre su capacidad para correr a velocidades superhumanas al inhalar vapores de "agua pesada". </p>
+        </info-card>
+    </div>
 </body>
 </html>

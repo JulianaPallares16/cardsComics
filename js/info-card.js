@@ -3,8 +3,8 @@ class InfoCard extends HTMLElement {
         super();
         const shadow = this.attachShadow({ mode: 'open' });
 
-        const container = document.createElement('div');
-        container.innerHTML = `
+        const card = document.createElement('div');
+        card.innerHTML = `
         <slot name="nombre">[Sin nombre]</slot>
         <img id="portada-img" src="" alt="Portada">
         <slot name="clave">[Sin nombre clave]</slot>
@@ -29,10 +29,10 @@ class InfoCard extends HTMLElement {
         img {
           height: 200px;
           width: 200px;
-          border-radius: 10px 10px 10px 10px;
+          border-radius: 10px;
         }
       `;
-        shadow.append(container, style)
+        shadow.append(card, style)
     }
     connectedCallback() {
         const slot = this.querySelector('[slot="imagen"]');
