@@ -11,6 +11,7 @@ class InfoCard extends HTMLElement {
         <slot name="casa">[Sin casa]</slot>
         <slot name="año">[Sin año]</slot>
         <slot name="info">[Sin información]</slot>
+        <button>Ver más</button>
 
 
         `;
@@ -18,18 +19,28 @@ class InfoCard extends HTMLElement {
         style.textContent = `
         div {
           border: 1px solid #232677;
-          border-radius: 10px;
-          padding: 12px;
+          border-radius: 12px;
+          padding: 16px;
           width: 250px;
           text-align: center;
           font-family: sans-serif;
           background: #fbf7e9;
           color: #232677;
+          box-shadow: 0 4px 8px #020313;
         }
         img {
           height: 200px;
           width: 200px;
+          border-radius: 12px;
+        }
+        button {
+          background-color: #232677;
+          color:  #f0f0f0;
           border-radius: 10px;
+          padding: 5px;
+        }
+        button:active{
+           background-color:rgb(83, 87, 200);
         }
       `;
         shadow.append(card, style)
