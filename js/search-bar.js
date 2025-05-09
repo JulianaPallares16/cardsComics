@@ -1,7 +1,7 @@
 class SearchBar extends HTMLElement {
     constructor() {
         super()
-        this.attachShadow({ mode: 'open'}):
+        this.attachShadow({ mode: 'open'});
 
         this.shadowRoot.innerHTML = `
         <style>
@@ -22,7 +22,7 @@ class SearchBar extends HTMLElement {
     }
     connectedCallback() {
         const input = this.shadowRoot.querySelector('input');
-        input.addEventListener['input',() => {
+        input.addEventListener('input',() => {
             const search = input.value.toLowerCase();
             const card = document.querySelectorAll('info-card');
             card.forEach(cards => {
@@ -30,8 +30,8 @@ class SearchBar extends HTMLElement {
                 const ver = nombre.includes(search);
                 cards.style.display = ver ? 'block' : 'none';
 
-            }];
-        };
+            });
+        });
     }
 }
 customElements.define('search-bar', SearchBar);
