@@ -13,3 +13,7 @@ body{
     justify-content: center;
     gap: 50px;
 }
+info-card:hover{
+    transform: translateY(-10px);
+          
+}
