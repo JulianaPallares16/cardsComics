@@ -17,6 +17,12 @@ class SearchBar extends HTMLElement {
             margin-bottom: 40px;
             background-color: #fbf7e9;
         }
+        @media screen and (max-width: 768px) {
+        input {
+            max-width: 280px;
+            font-size: 18px;
+        }
+        }
         </style>
         <input type="text" placeholder="Buscar comic...">
         `;

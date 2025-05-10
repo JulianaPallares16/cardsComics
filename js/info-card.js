@@ -89,6 +89,22 @@ class InfoCard extends HTMLElement {
         height: 300px;
         border-radius: 40px;
       }
+      @media screen and (max-width: 768px) {
+        .modal-content {
+          grid-template-columns: 1fr;
+          width: 90%;
+          padding: 10px;
+        }
+        .modal-content img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+        }
+
+        #text {
+          text-align: center;
+        }
+      }
     `;
     shadow.append(card, style);
   }
